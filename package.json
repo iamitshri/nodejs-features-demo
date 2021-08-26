@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-features-demo",
+  "version": "1.0.0",
+  "description": "- Nodejs is cross-platform, open source run time environment. - It's not a framework or programming language - Nodejs is used to build backend services aka API -  - Express JS   - Framework built on top of Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamitshri/nodejs-features-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamitshri/nodejs-features-demo/issues"
+  },
+  "homepage": "https://github.com/iamitshri/nodejs-features-demo#readme"
+}
