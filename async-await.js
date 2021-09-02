@@ -15,6 +15,11 @@ const multiply = (a, b) => {
 //  await is only valid in async function
 async function demoAsync() {
     try {
+
+        // in promise chaining, x,y and z values wont be available easily to use since they are part of different code blocks unless we initialize them at the top well before
+        // using async await code looks synchronous and easy to understand.
+        // In try catch block, catch is used if the promise is not fulfilled
+        // in the example below, z waits for y, y waits for x to get computed.
         let x = await multiply(12, 12)
         let y = await multiply(x, 12)
         let z = await multiply(y, 12)
