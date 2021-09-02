@@ -23,7 +23,7 @@ async function demoAsync() {
         console.error(e);
     }
 
-    // if there are failures those can be handled using try catch
+    // if there are failures from any promise those can be handled using try catch
     try {
         let x = await multiply(11, 12)
         console.log(x);
@@ -31,6 +31,5 @@ async function demoAsync() {
         console.log('error from the function:', e)
     }
 }
-
 
 demoAsync()

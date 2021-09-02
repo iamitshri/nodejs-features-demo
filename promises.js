@@ -9,26 +9,26 @@ const add = (a, b) => {
 
 // Promise
 add(1, 2).then((sum) => {
-    console.log("resolved",sum)
+    console.log("example 1: resolved", sum)
 }).catch((sum) => {
-    console.log("Rejected Promise",sum);
+    console.log("Rejected Promise", sum);
 })
 
 // Promise Chaining
-add(12,12).then((sum) => {
+add(12, 12).then((sum) => {
     return add(sum, 12)
 }).then((sum2) => {
-    return add(sum2,12)
-}).then((sum3)=>{
-    console.log('Result after promise chaining:',sum3)
-}).catch((e)=>{
-    console.log('error',e)
+    return add(sum2, 12)
+}).then((sum3) => {
+    console.log('example 1: Result after promise chaining:', sum3)
+}).catch((e) => {
+    console.log('error', e)
 })
 
-
-const multiply =  (a, b) => {
+// Just another example
+const multiply = (a, b) => {
     if (a < 12) {
-        throw new Error("Invalid number again")
+        throw new Error("Invalid number ")
     }
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -37,14 +37,11 @@ const multiply =  (a, b) => {
     })
 }
 
-console.log('final example:')
-// regular way of doing multiple operations
 multiply(12, 12)
     .then((result) => {
-        console.log('return:', result)
-        return multiply(12 , result)
+        return multiply(12, result)
     }).then((result1) => {
-    console.log(result1)
+    console.log('example 2: final result:',result1)
 }).catch((err) => {
-    console.log('error:',err)
+    console.log('error:', err)
 })
